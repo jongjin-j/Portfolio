@@ -11,6 +11,7 @@ export default function Projects({ data }) {
 
     return (
         <Layout>
+            <Link className={styles.btn} to="/">Back</Link>
             <div className={styles.portfolio}>
                 <h2>Personal Projects</h2>
                 <div className={styles.projects}>
@@ -42,7 +43,7 @@ export const query = graphql`
                     slug
                     projectImage {
                         childImageSharp {
-                            gatsbyImageData(width: 300)
+                            gatsbyImageData(width: 300, aspectRatio: 2)
                         }
                     }
                 }

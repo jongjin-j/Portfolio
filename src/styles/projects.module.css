@@ -4,7 +4,7 @@
 
 .portfolio h2 {
     font-size: 2em;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .portfolio h3 {
@@ -27,4 +27,13 @@
 
 .projects p{
     margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3CAEA3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 500;
 }

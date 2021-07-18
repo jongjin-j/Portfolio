@@ -1,16 +1,13 @@
 import { graphql, Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Layout from '../../components/Layout'
 import * as styles from '../../styles/projects.module.css'
-
 
 export default function Projects({ data }) {
 
     const projects = data.projects.nodes
     const contact = data.contact.siteMetadata.contact
-
-    console.log(projects[0].frontmatter.projectImage)
 
     return (
         <Layout>
@@ -20,7 +17,7 @@ export default function Projects({ data }) {
                     {projects.map(p => (
                         <Link to={"/projects/" + p.frontmatter.slug} key = {p.id}>
                             <div>
-                                <StaticImage src={p.frontmatter.projectImage} alt="Google Maps"/>
+                                <GatsbyImage image={getImage(p.frontmatter.projectImage)} alt={p.frontmatter.title} />
                                 <h3>{p.frontmatter.title}</h3>
                                 <p>{p.frontmatter.stack}</p>
                             </div>
@@ -43,7 +40,11 @@ export const query = graphql`
                     title
                     stack
                     slug
-                    projectImage
+                    projectImage {
+                        childImageSharp {
+                            gatsbyImageData(width: 300)
+                        }
+                    }
                 }
                 id
             }
@@ -55,5 +56,3 @@ export const query = graphql`
         }
     }
 `
-
-/*<StaticImage src="../../images/GoogleMaps.png" alt="Google Maps"/>*/

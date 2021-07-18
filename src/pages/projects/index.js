@@ -11,7 +11,7 @@ export default function Projects({ data }) {
 
     return (
         <Layout>
-            <Link className={styles.btn} to="/">Back</Link>
+            <Link className={styles.button} to="/">Back</Link>
             <div className={styles.portfolio}>
                 <h2>Personal Projects</h2>
                 <div className={styles.projects}>

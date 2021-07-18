@@ -12,7 +12,8 @@ export default function Home({ data }) {
           <h2>Jongjin Jung</h2>
           <h3>Project Portfolio</h3>
           <p>Computer Engineering Student at University of Toronto</p>
-          <Link className={styles.btn} to="/projects">Personal Projects</Link>
+          <Link className={styles.button} target="_blank" rel="noopener noreferrer" to="https://jongjin-j.github.io/">Website</Link>
+          <Link className={styles.button} to="/projects">Personal Projects</Link>
         </div>
       </section>
     </Layout>

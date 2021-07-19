@@ -1,0 +1,47 @@
+.header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.contacts ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts li {
+    font-size: 27px;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.wrapper {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.wrapper_email:hover {
+    background-color: #BD081C;
+}
+
+.wrapper_github:hover {
+    background-color: #B0BEC5;
+}
+
+.wrapper_linkedin:hover {
+    background-color: #0A66C2;
+}
+
+.wrapper_instagram:hover {
+    background-color: #E4405F;
+}
+
+.wrapper_facebook:hover {
+    background-color: #1877F2;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Contact from './Contact'
 import '../styles/global.css'
 
 export default function Layout({ children }) {
@@ -9,6 +10,7 @@ export default function Layout({ children }) {
             <div className="content">
                 { children }
             </div>
+            <Contact/>
             <footer>
                 <p>Copyright 2021 Jongjin Jung</p>
             </footer>

@@ -10,9 +10,9 @@ export default function Home({ data }) {
       <section className={styles.header}>
         <div>
           <h2>Jongjin Jung</h2>
-          <h3>Project Portfolio</h3>
-          <p>Computer Engineering Student at University of Toronto</p>
-          <Link className={styles.button} target="_blank" rel="noopener noreferrer" to="https://jongjin-j.github.io/">Website</Link>
+          <h5>Computer Engineering Student at University of Toronto</h5>
+          <p>Intro</p>
+          <Link className={styles.button} target="_blank" rel="noopener noreferrer" to="../../static/resume.pdf">Resume</Link>
           <Link className={styles.button} to="/projects">Personal Projects</Link>
         </div>
       </section>

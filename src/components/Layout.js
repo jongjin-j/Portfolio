@@ -10,8 +10,8 @@ export default function Layout({ children }) {
             <div className="content">
                 { children }
             </div>
-            <Contact/>
             <footer>
+                <Contact/>
                 <p>Copyright 2021 Jongjin Jung</p>
             </footer>
         </div>

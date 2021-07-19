@@ -11,7 +11,7 @@ export default function Details({ data }) {
 
     return (
         <Layout>
-            <Link className={styles.button} to="/projects">Back</Link>
+            <Link className={styles.button + ' ' + styles.back} to="/projects">Back</Link>
             <div className={styles.details}>
                 <h2>{title}</h2>
                 <h3>{stack}</h3>

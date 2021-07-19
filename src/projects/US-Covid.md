@@ -2,6 +2,7 @@
 title: US Covid-19 Data
 stack: Javascript, React.js
 slug: US-Covid
+order: 2
 projectImage: ../images/US-Covid.png
 link: https://github.com/jongjin-j/US-Covid
 ---

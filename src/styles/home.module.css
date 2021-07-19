@@ -10,10 +10,14 @@
 }
 
 .header h5 {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2em;
 }
 
 .button {
@@ -24,4 +28,10 @@
     margin-top: 20px;
     margin-right: 12px;
     font-weight: 500;
+    margin-bottom: 150px;
+}
+
+.button:hover {
+    background: white;
+    color: #3CAEA3;
 }

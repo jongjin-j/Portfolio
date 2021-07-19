@@ -2,6 +2,7 @@
 title: Hangman
 stack: C++, Javascript
 slug: hangman
+order: 6
 projectImage: ../images/hangman.png
 link: https://github.com/jongjin-j/Simple-Hangman
 ---

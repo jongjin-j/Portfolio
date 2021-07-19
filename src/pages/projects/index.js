@@ -7,35 +7,31 @@ import * as styles from '../../styles/projects.module.css'
 export default function Projects({ data }) {
 
     const projects = data.projects.nodes
-    const contact = data.contact.siteMetadata.contact
 
     return (
         <Layout>
             <Link className={styles.button} to="/">Back</Link>
             <div className={styles.portfolio}>
-                <h2>Personal Projects</h2>
                 <div className={styles.projects}>
                     {projects.map(p => (
                         <Link to={"/projects/" + p.frontmatter.slug} key = {p.id}>
-                            <div>
-                                <GatsbyImage image={getImage(p.frontmatter.projectImage)} alt={p.frontmatter.title} />
-                                <h3>{p.frontmatter.title}</h3>
-                                <p>{p.frontmatter.stack}</p>
+                            <div className={styles.project}>
+                                <GatsbyImage image={getImage(p.frontmatter.projectImage)} alt={p.frontmatter.title} className={styles.image} />
+                                <div className={styles.overlay}>View Project</div>
                             </div>
+                            <h3>{p.frontmatter.title}</h3>
+                            <p>{p.frontmatter.stack}</p>
                         </Link>
                     ))}
                 </div>
-
-                <p>Email: {contact}</p>
             </div>
         </Layout>
-            
     )
 }
 
 export const query = graphql`
     query projectQuery {
-        projects: allMarkdownRemark {
+        projects: allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
             nodes {
                 frontmatter {
                     title

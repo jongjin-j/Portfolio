@@ -4,7 +4,6 @@ import { FaGithub } from "@react-icons/all-files/fa/FaGithub"
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn"
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
-import { Link } from 'gatsby'
 import * as styles from '../styles/contacts.module.css'
 
 export default function Contact() {
@@ -13,11 +12,11 @@ export default function Contact() {
             <h2 className={styles.header}>Contact</h2>
             <div className={styles.contacts}>
                 <ul>
-                    <li className={styles.wrapper + ' ' + styles.wrapper_email}><Link target="_blank" rel="noopener noreferrer"><FiMail/></Link></li>
-                    <li className={styles.wrapper + ' ' + styles.wrapper_github}><Link target="_blank" rel="noopener noreferrer" to="https://github.com/jongjin-j"><FaGithub/></Link></li>
-                    <li className={styles.wrapper + ' ' + styles.wrapper_linkedin}><Link target="_blank" rel="noopener noreferrer" to="https://www.linkedin.com/in/jongjin-jung-445595204/"><FaLinkedinIn/></Link></li>
-                    <li className={styles.wrapper + ' ' + styles.wrapper_instagram}><Link target="_blank" rel="noopener noreferrer" to="https://www.instagram.com/jongjin_jung/"><FaInstagram/></Link></li>
-                    <li className={styles.wrapper + ' ' + styles.wrapper_facebook}><Link target="_blank" rel="noopener noreferrer" to="https://www.facebook.com/JongjinJung0316/"><FaFacebookF/></Link></li>
+                    <li className={styles.wrapper + ' ' + styles.wrapper_email}><a target="_blank" rel="noopener noreferrer" aria-label="email" href="/"><FiMail/></a></li>
+                    <li className={styles.wrapper + ' ' + styles.wrapper_github}><a target="_blank" rel="noopener noreferrer" href="https://github.com/jongjin-j" aria-label="email"><FaGithub/></a></li>
+                    <li className={styles.wrapper + ' ' + styles.wrapper_linkedin}><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jongjin-jung-445595204/" aria-label="email"><FaLinkedinIn/></a></li>
+                    <li className={styles.wrapper + ' ' + styles.wrapper_instagram}><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jongjin_jung/" aria-label="email"><FaInstagram/></a></li>
+                    <li className={styles.wrapper + ' ' + styles.wrapper_facebook}><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/JongjinJung0316/" aria-label="email"><FaFacebookF/></a></li>
                 </ul>
             </div>
         </div>

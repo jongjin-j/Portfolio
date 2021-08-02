@@ -7,7 +7,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 export default function Details({ data }) {
 
     const { html } = data.markdownRemark
-    const { title, stack, link, projectImage } = data.markdownRemark.frontmatter
+    const { title, stack, link, projectImage, order } = data.markdownRemark.frontmatter
 
     return (
         <Layout>
@@ -18,7 +18,11 @@ export default function Details({ data }) {
                 <div className={styles.image}>
                     <GatsbyImage image={getImage(projectImage)} alt={title} />
                 </div>
-                <Link className={styles.button} to={link} target="_blank" rel="noopener noreferrer">Github</Link>
+                {order === 1 ? 
+                    <a className={styles.button} href={link} target="_blank" rel="noopener noreferrer">Link</a>
+                :
+                    <a className={styles.button} href={link} target="_blank" rel="noopener noreferrer">Github</a>
+                }
                 <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
             </div>
         </Layout>
@@ -32,6 +36,7 @@ export const query = graphql`
             frontmatter {
                 title
                 stack
+                order
                 projectImage {
                     childImageSharp {
                         gatsbyImageData(

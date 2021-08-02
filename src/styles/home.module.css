@@ -35,3 +35,14 @@
     background: white;
     color: #3CAEA3;
 }
+
+@media only screen and (max-width: 1000px){
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    .header h2, h5, p, .buttonContainer {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+}

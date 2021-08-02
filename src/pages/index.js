@@ -12,9 +12,11 @@ export default function Home({ data }) {
         <div>
           <h2>Jongjin Jung</h2>
           <h5>Computer Engineering Student at University of Toronto</h5>
-          <p>📍 Toronto / Boston</p>
-          <a className = {styles.button} target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
-          <Link className={styles.button} to="/projects">Projects</Link>
+          <p>📍 Toronto &amp; Boston</p>
+          <div className={styles.buttonContainer}>
+            <a className = {styles.button} target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
+            <Link className={styles.button} to="/projects">Projects</Link>
+          </div>
         </div>
       </section>
     </Layout>

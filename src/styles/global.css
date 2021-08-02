@@ -61,9 +61,25 @@ nav a:hover::after {
   transform: scale(1, 1);
 }
 
-
-footer p{
+footer p {
   text-align: center;
   color: #bbb;
   margin: 40px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav h1 {
+    margin-left: 20px;
+  }
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  nav a::after {
+    transform: scale(0, 0);
+  }
+  nav a:hover::after {
+    transform: scale(0, 0);
+  }
 }

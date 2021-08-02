@@ -2,12 +2,12 @@
 title: Cocktail Searcher
 stack: Javascript, React, Node.js, Express
 slug: cocktail-searcher
-order: 7
+order: 3
 projectImage: ../images/CocktailSearcher.png
 link: https://github.com/jongjin-j/Cocktails
 ---
 
-This project is a Cocktail Search App that browses through all existing cocktails using TheCocktailDB API. Users can view the image, ingredients and measures, and instructions of the cocktail they searched. The Node JS backend fetches JSON from TheCocktailDB API using Axios, then formats and sends only the required data to the frontend. I utilized dynamic routing for individual cocktails using React Router. 
+This project is a Cocktail Search App that browses through all existing cocktails using TheCocktailDB API. Users can view the image, ingredients and measures, and instructions of the cocktail they searched. The Node JS backend fetches JSON from TheCocktailDB API using Axios, then formats and sends only the required data to the frontend. I utilized dynamic routing for individual cocktails using React Router. The app is hosted on Netlify. 
 
 <br/><br/>
 

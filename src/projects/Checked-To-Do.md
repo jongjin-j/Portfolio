@@ -2,7 +2,7 @@
 title: Checked-To-Do App
 stack: React Native
 slug: checked-to-do
-order: 8
+order: 4
 projectImage: ../images/Checked-To-Do.png
 link: https://github.com/jongjin-j/To-Do-App
 ---

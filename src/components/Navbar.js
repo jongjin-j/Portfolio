@@ -16,6 +16,7 @@ export default function Navbar() {
 
     return (
         <nav>
+            <title>Jongjin Jung</title>
             <h1>{ "Project " + title }</h1>
             
             <div className="links">

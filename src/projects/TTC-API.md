@@ -2,7 +2,7 @@
 title: TTC Subway API
 stack: Javascript, Node.js, Express.js, MongoDB
 slug: ttc-api
-order: 6
+order: 7
 projectImage: ../images/TTC-API.png
 link: https://github.com/jongjin-j/TTC-Subway-API
 ---

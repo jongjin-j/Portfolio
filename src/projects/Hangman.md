@@ -2,7 +2,7 @@
 title: Hangman
 stack: C++, Javascript
 slug: hangman
-order: 8
+order: 9
 projectImage: ../images/hangman.png
 link: https://github.com/jongjin-j/Simple-Hangman
 ---

@@ -2,7 +2,7 @@
 title: Private Blog
 stack: Javascript, Node.js, Express.js, MongoDB
 slug: private-blog
-order: 5
+order: 6
 projectImage: ../images/PrivateBlog.png
 link: https://github.com/jongjin-j/PrivateBlog
 ---

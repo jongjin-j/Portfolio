@@ -1,0 +1,74 @@
+.container {
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.experiences {
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.item {
+    background: #A31B14;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.item:hover {
+    background: rgba(163, 27, 20, 0.5);
+}
+
+.item plaintext {
+    margin-bottom: 10px;
+}
+
+.list {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.jobtitle {
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    background: #3CAEA3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 12px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background: white;
+    color: #3CAEA3;
+}
+
+@media only screen and (max-width: 1000px) {
+    .button {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .container h2 {
+        font-size: 2em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .container p{
+        text-align: left;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}

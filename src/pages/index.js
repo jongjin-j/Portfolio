@@ -15,6 +15,7 @@ export default function Home({ data }) {
           <p>📍 Toronto &amp; Boston</p>
           <div className={styles.buttonContainer}>
             <a className = {styles.button} target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
+            <Link className={styles.button} to="/experiences">Experiences</Link>
             <Link className={styles.button} to="/projects">Projects</Link>
           </div>
         </div>

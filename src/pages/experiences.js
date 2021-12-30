@@ -11,7 +11,7 @@ export default function about() {
             <div className={styles.container}>
                 <h2>Experiences</h2>
                 <div className={styles.experiences}>
-                    <Link to="https://www.oracle.com/index.html">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.oracle.com/index.html">
                         <div className={styles.item}>
                             <plaintext>May 2022 - April 2023</plaintext>
                             <h3 className={styles.jobtitle}>Software Developer Intern</h3>
@@ -20,9 +20,9 @@ export default function about() {
                                 <li>Incoming...</li>
                             </ul>
                         </div>
-                    </Link>
+                    </a>
                     
-                    <Link to="https://rapstudy.com/">
+                    <a target="_blank" rel="noopener noreferrer" href="https://rapstudy.com/">
                         <div className={styles.item}>
                             <plaintext>Sep 2021 - Dec 2021</plaintext>
                             <h3 className={styles.jobtitle}>Software Engineer Intern</h3>
@@ -34,9 +34,9 @@ export default function about() {
                                 <li>Implemented a responsive and dynamic design through conditional rendering and media queries</li>
                             </ul>
                         </div>
-                    </Link>
-
-                    <Link to="http://cs-people.bu.edu/spchin/">
+                    </a>
+                    
+                    <a target="_blank" rel="noopener noreferrer" href="http://cs-people.bu.edu/spchin/">
                         <div className={styles.item}>
                             <plaintext>May 2021 - August 2021</plaintext>
                             <h3 className={styles.jobtitle}>ML Research Assistant</h3>
@@ -48,7 +48,7 @@ export default function about() {
                                 <li>Participated in ATD (Algorithms for Thread Detection) to develop anomaly detection algorithms to detect unusual traffic congestion</li>
                             </ul>
                         </div>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </Layout>

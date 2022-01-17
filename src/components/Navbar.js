@@ -17,7 +17,8 @@ export default function Navbar() {
     return (
         <nav>
             <title>Jongjin Jung</title>
-            <h1>{ "Project " + title }</h1>
+            {/* <h1>{ "Project " + title }</h1> */}
+            <h1>Jongjin Jung</h1>
             
             <div className="links">
                 <Link to="/">Home</Link>

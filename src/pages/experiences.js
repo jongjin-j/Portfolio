@@ -17,7 +17,11 @@ export default function about() {
                             <h3 className={styles.jobtitle}>Software Developer Intern</h3>
                             <h3>Oracle</h3>
                             <ul className={styles.list}>
-                                <li>Incoming...</li>
+                                <li>Migrated a microservice into an external cloud native application (knative) and deployed as a serverless function, running parallel with the provider that increased scalability and flexibility</li>
+                                <li>Implemented an event-driven architecture using Apache Kafka to send and receive cloud events between the provider and the cloud native application</li>
+                                <li>Developed and deployed an API library that enables CRUD operations in Vault in order to manage AES secrets for pod configurations, further enhancing encryption and security</li>
+                                <li>Developed a faster and user-friendly frontend to replace the old Eloqua UI through TypeScript and React that renders/manages its components, and saving / deleting data to the server</li>
+                                <li>Wrote automation test cases using Selenium in C# to verify the developed functionalities and meet the required time constraints</li>
                             </ul>
                         </div>
                     </a>

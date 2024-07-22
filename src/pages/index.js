@@ -11,7 +11,7 @@ export default function Home({ data }) {
       <section className={styles.header}>
         <div>
           <h2>Hello!</h2>
-          <h5>Computer Engineering Student at University of Toronto  Incoming SDE Intern @ Oracle</h5>
+          <h5>Recent Computer Engineering Graduate from University of Toronto</h5>
           <p>📍 Toronto &amp; Boston</p>
           <div className={styles.buttonContainer}>
             <a className = {styles.button} target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>

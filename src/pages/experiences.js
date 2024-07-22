@@ -14,7 +14,7 @@ export default function about() {
                     <a target="_blank" rel="noopener noreferrer" href="https://www.oracle.com/index.html">
                         <div className={styles.item}>
                             <plaintext>May 2022 - April 2023</plaintext>
-                            <h3 className={styles.jobtitle}>Software Developer Intern</h3>
+                            <h3 className={styles.jobtitle}>Software Developer</h3>
                             <h3>Oracle</h3>
                             <ul className={styles.list}>
                                 <li>Migrated a microservice into an external cloud native application (knative) and deployed as a serverless function, running parallel with the provider that increased scalability and flexibility</li>

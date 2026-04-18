@@ -3,11 +3,9 @@ import Layout from "../components/Layout"
 import * as styles from "../styles/details.module.css"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Mdx } from "gatsby-plugin-mdx"
-
+import { MDXContent } from "gatsby-plugin-mdx"
 export default function Details({ data }) {
-  console.log(data, data.mdx)
-  const { frontmatter, body } = data.mdx
+  const { frontmatter, internal } = data.mdx
   const { title, stack, link, projectImage, order } = frontmatter
 
   return (
@@ -41,7 +39,7 @@ export default function Details({ data }) {
           </a>
         )}
         <div className={styles.html}>
-          <Mdx>{body}</Mdx>{" "}
+          <MDXContent contentFilePath={internal.contentFilePath} />
         </div>
       </div>
     </Layout>
@@ -51,11 +49,11 @@ export default function Details({ data }) {
 export const query = graphql`
   query singlePageQuery($slug: String) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
-      body
       frontmatter {
         title
         stack
         order
+        link
         projectImage {
           childImageSharp {
             gatsbyImageData(
@@ -65,7 +63,9 @@ export const query = graphql`
             )
           }
         }
-        link
+      }
+      internal {
+        contentFilePath
       }
     }
   }

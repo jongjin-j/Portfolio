@@ -19,9 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
   data.allMdx.nodes.forEach(node => {
     actions.createPage({
       path: "/projects/" + node.frontmatter.slug,
-      component: path.resolve(
-        "./src/templates/details.js?__contentFilePath=${node.internal.contentFilePath}"
-      ),
+      component: `${path.resolve("./src/templates/details.js")}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
         slug: node.frontmatter.slug,
       },
